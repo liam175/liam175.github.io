@@ -1,0 +1,146 @@
+.bodya{
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(
+    -90deg,
+    #ceab4a 0%,
+    #ceab4a 50%,
+    #86251c 50%,
+    #86251c 100%
+  );
+  display: grid;
+  margin: 0%;
+  grid-template-columns: [column0] 50vw [column1] 50% [column2];
+  grid-template-rows: [row0] 5vh [row1] 95%;
+  }
+  .swapB{
+    width:25vw;
+    height: 100%;
+    margin-top: 0vh;
+    background-color: 6b6b6b;
+    font-size: 3vh; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .bodyb{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: grid;
+    margin: 0%;
+    grid-template-columns: [column0] 50vw [column1] 50% [column2];
+    grid-template-rows: [row0] 5vh [row1] 95%;
+    }
+  .OperationsBox{
+    width: 100%;
+    height:100%;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    background-color:#bab9b9 ;
+    display: grid;
+    grid-template-rows: [row0] 5vh [row1] 5vh [row3];
+    grid-template-columns: [c1]25%[c2]25%[c3]25%[c4]25%;
+    justify-content: right;
+    align-items:center;
+  }
+  .SideBoxes{
+    display: flex;
+    flex-direction: column;
+    grid-row: row1;
+    width: 100%;
+    align-items:center;
+  }
+  .ButtonBoxes{
+    display: grid;
+    width: 100%;
+    grid-template-rows:[row0] 1vh [row1] 13vh [row2] 13vh [row3] 13vh [row4] ;
+    align-items:flex-start;
+  }
+  .Boxes{
+    display: grid;
+    width: 100%;
+    grid-template-columns: [column0]50vw [column1]50vw [column2];
+    grid-template-rows:[row0] 25vw [row1] 25vw [row2] 25vw [row3] 25vw [row4] ;
+    align-items:flex-start;
+  }
+  input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #86251c;
+    /* Not removed via appearance */
+    margin: 0;
+    float: left;
+    border: none;
+    border-radius: 10%;
+    color: #ceab4a;
+    display: inline-block;
+    text-align: center;
+    font-size: 5vh;
+    width: 12.5vw;
+    height: 10vw;
+    background-color: #86251c;
+  }
+  input[type="checkbox"]:checked {
+    background-color: #b98578;
+  }
+  .InputButtonR{
+    border: none;
+    border-radius: 25%;
+    color: #ceab4a;
+    display: inline-block;
+    text-align: center;
+    font-size: 5vh;
+    width: 10vh;
+    height: 10vh;
+    background-color: #86251c;
+  }
+  .InputButtonR:active{
+    background-color: #b98578;
+  }
+  .InputButtonY:active{
+    background-color: #e9d8af;
+  }
+  .InputButtonY{
+    border: none;
+    border-radius: 25%;
+    color: #86251c;
+    display: inline-block;
+    text-align: center;
+    font-size: 5vh;
+    width: 10vh;
+    height: 10vh;
+    background-color: #ceab4a;
+  }
+  .MajorFailureB:active{
+    background: orange;
+  }
+  .MajorFailureB{
+    width:25vw;
+    height: 100%;
+    margin-top: 0vh;
+    background: linear-gradient(
+    -45deg,
+    yellow 0%,
+    yellow 10%,
+    red 10%,
+    red 20%,
+    yellow 20%,
+    yellow 30%,
+    red 30%,
+    red 40%,
+    yellow 40%,
+    yellow 50%,
+    red 50%,
+    red 60%,
+    yellow 60%,
+    yellow 70%,
+    red 70%,
+    red 80%,
+    yellow 80%,
+    yellow 90%,
+    red 90%,
+    red 100%
+  );
+    align-self:flex-end;
+  }

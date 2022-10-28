@@ -1,0 +1,44 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+  <body id="collectPage" class="bodya" style="background-color: #ceab4a;">
+    <script src="qrcodecode.js"></script>
+    <div class="SideBoxes">
+      <t style="color: #ceab4a;font-size: 5vh; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;margin-right: auto;margin-left: 5vw;">auto</t>
+      <div class="ButtonBoxes" style="justify-items: right; align-self: center; justify-self: left;margin-right: auto;margin-top: auto;margin-bottom: auto;">
+        <img src="Liamthinggold.png"  style="height: 40vh; grid-row: row0;align-self: flex-start;justify-self: left;margin-left: 0;"><img>
+        <button id = "b1" class="InputButtonY" style="grid-row: row1;margin-right: 7%;">0</button>
+        <button id = "b2"class="InputButtonY" style="margin-right: 7%;">0</button>
+      </div>
+    </div>
+    <div class="SideBoxes">
+      <t style="color: #86251c;font-size: 5vh; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;margin-left: auto;margin-right: 5vw;">teleop</t>
+      <div class="ButtonBoxes" style="justify-items: left;margin-right: 0; align-self: flex-start; margin-top: 10vh;overflow: hidden;" >
+        <img src="Liamthingred.png"  style="height: 40vh; grid-row: row0;align-self: flex-start;justify-self: right;"><img>
+        <button id = "b3" class="InputButtonR" style="grid-row: row1; margin-left: 7%;">0</button>
+        <button id = "b4" class="InputButtonR" style="margin-left: 7%;">0</button>
+      </div>
+      <div class="ButtonBoxes" style="width: 100%;align-items: flex-end; align-self: flex-end;justify-self: left;margin-right: auto;margin-left: 0;grid-template-columns: [c1]25%[c2]25%[c3]25%[c4]25%;">
+        <img src="bars red(1).png"  style="width: 50vw;justify-self: left;margin-right: auto;margin-left: 0vw;align-self: flex-start;"><img>
+        <input id = "c1" onclick="checkCBoxes(0)" type="checkbox" class="barsbutton" style="grid-row: row2;grid-column: auto;"></input>
+        <input id = "c2" onclick="checkCBoxes(1)" type="checkbox" class="barsbutton" style="grid-row: row2;grid-column: auto;"></input>
+        <input id = "c3" onclick="checkCBoxes(2)" type="checkbox" class="barsbutton" style="grid-row: row2;grid-column: auto;"></input>
+        <input id = "c4" onclick="checkCBoxes(3)" type="checkbox" class="barsbutton" style="grid-row: row2;grid-column: auto;"></input>
+      </div>
+      
+    </div>
+    <div class="OperationsBox">
+      <input type="text" id="teamnum" style="grid-row: row1;grid-column-start: c2; grid-column-end: c4; margin-left: 12.5vw; margin-right: 12.5vw;background-color: #86251c; color: #ceab4a;font-size: 4vh;align-self: flex-start;text-align: center;border-color: #ceab4a;" placeholder="TEAM"></input>
+      <input type="text" id="round" style="grid-row: row3;grid-column-start: c2; grid-column-end: c4; margin-left: 12.5vw; margin-right: 12.5vw;background-color: #86251c; color: #ceab4a;font-size: 3vh;align-self: flex-start;text-align: center;border-color: #ceab4a;" placeholder="ROUND"></input>
+    <button class="MajorFailureB" id="mf"></button>
+    <button class="swapB" id="bs">swap</button>
+    <button id="pb"class="swapB">Push</button>
+    <button id="clear"class="swapB">clear</button>
+  </div>
+  <canvas id="qr" style="width: 200%;"></canvas>
+  <script src="main_s.js"></script>
+  </body>
+ 
+</html>
